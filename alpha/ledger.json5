@@ -2,14 +2,14 @@
   identity: "mahjnydq6funtibfdehemay6lwirrgeroazmqqhhac2jaq5yyx",
   initial: {
     // Treasury account
-    "mqdukzwuwgt3porn6q4vq4xu3mwy5gyskhouryzbscq7wb2iaaaaq25": {
-      "MFX": "100_000_000__000_000_000"
+    mqdjnydq6funtibfdehemay6lwirrgeroazmqqhhac2jaq5yaaaaayf: {
+      MFX: "100_000_000__000_000_000"
     }
   },
-  "symbols": {
-    "mqbh742x4s356ddaryrxaowt4wxtlocekzpufodvowrirfrqaaaaa3l": "MFX",
+  symbols: {
+    mqbh742x4s356ddaryrxaowt4wxtlocekzpufodvowrirfrqaaaaa3l: "MFX",
   },
-  "accounts": [
+  accounts: [
     /// Shared treasury account.
     {
       subresource_id: 0,
@@ -18,18 +18,24 @@
       roles: {
         // Self.
         mqdjnydq6funtibfdehemay6lwirrgeroazmqqhhac2jaq5yaaaaayf: ["owner"],
+        // Hans
         maen6t2i7ymw53x6lg7gneetbhayjwa4i4lbe377ybimn6balh: ["canMultisigSubmit"],
+        // Malcolm
         mafd6yd4pjcsh3e4exw2ro37quqtbgwnulrju7xkdfbqljxyni: ["canMultisigSubmit"],
+        // Stanley
         maetompdzcyrn6666i4xfelwjyx5xbabdnc7v5kxkw75gvki4a: ["canMultisigSubmit"],
+        // Mark
         maflnakbkp6f52j3iiopslzh7yyrpgr442c4cm62x3jagb4aue: ["canMultisigSubmit"],
+        // Tho
         mahax7zghro7xzfgc6md6r2rvpieghttpf6nrmbw3omfrkzixo: ["canMultisigSubmit"],
       },
       features: [
         {
-          id: 1,
+          id: 1,  // Multisig
           arg: {
             threshold: 3,
-            timeout_in_secs: 86400
+            timeout_in_secs: 259200, // 3 * 86400 seconds = 3 days.
+            execute_automatically: true,
           }
         }
       ]
@@ -64,67 +70,7 @@
     //                ["abandon", "insane"]       => mahax7zghro7xzfgc6md6r2rvpieghttpf6nrmbw3omfrkzixo
     "L2lkc3RvcmUvMDCCZ2FiYW5kb25maW5zYW5l": "ogBYQAEJUAI5oVXGLk7lZjuqlc0fjhkB09k4J0xtuRa+axzb84hkV+IH4a2U4BCIgT3sci6wKE+ijugZTVGIVeV/7eMBWE2lAQIDJiABIVggpGeVs5YGwNCI6b3GoVX4+uWh3nCEMKVtBW8jC6e7bDsiWCBWaChvGhXGo0GsLaRm7PWvB+cnoLkrI9Qp8f+IaYM30w==",
     "L2lkc3RvcmUvMDEBwX/kx4u/fJTC8wfo6jV6CGPOby+bFgbbcwsVZQ==": "ogBYQAEJUAI5oVXGLk7lZjuqlc0fjhkB09k4J0xtuRa+axzb84hkV+IH4a2U4BCIgT3sci6wKE+ijugZTVGIVeV/7eMBWE2lAQIDJiABIVggpGeVs5YGwNCI6b3GoVX4+uWh3nCEMKVtBW8jC6e7bDsiWCBWaChvGhXGo0GsLaRm7PWvB+cnoLkrI9Qp8f+IaYM30w==",
-
-    // ["abandon", "gun"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25jZ3Vu": "ogBYQCf03a1fDKcj6xsVttQi3iBHtsEVUvXi7rno+ptz2Og8IXG9ORP0yd3bpB7fpYXzUaKJoOlVFvWO8v/3iFUSGMMBWE2lAQIDJiABIVgge3RD64xEa06DUGf/bSNUomXe1WegqaLW7zjMbSqgc1siWCDLTkLhHlJvQzuZIGjOERo1YG49X/7IBtfargBQV0PO5A==",
-
-    // ["abandon", "east"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25kZWFzdA==": "ogBYQM9WDJLw1m05/Q3yn9dAiHn1phBhV3wRuLpks0KXl95PnRfBVEh6vUfU/LCaVbjjtWLNpvKhMDrgXQ7ywX1owksBWE2lAQIDJiABIVggd1rnlVNp8/wAcPFomIQ+LC83xzY6ytG4wG50opQPOZEiWCDHq9i50G+8d+GO8+fyfdK7FUbCtJxBuPaF/ACdSe3idw==",
-
-    // ["abandon", "farm"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25kZmFybQ==": "ogBYQM1cbJ9w9U4+oiogs57HSSoArrHI24JwLmrfCEs2iauczQ3asi9GuMkNKLKBx62809S+uDwReSW8wmLVc6ZBVx8BWE2lAQIDJiABIVgg/GItWU9YVlIIHeNyTSieRjP3evxAQcJsNF+tBsmYnQ0iWCBW1tTAiyRHBxlEUL8lr24Pf3w6PpGfwPPGiI1T6YGOVg==",
-
-    // ["abandon", "craft"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25lY3JhZnQ=": "ogBYQGhgASD5rOH9YA9q16gSNhtKlLXEGo6JE2mKMZbyepIHIo2QpcnebeEYHizDoEh2jn8xfTH9kB1jufq78HCTR1UBWE2lAQIDJiABIVggeyNv+rGywWNw1Y+eBHvtbOywbvpChiD5w3AytEhOgaYiWCBpQFFD4BGVd3vb+fx1zDH+IOZwSOulJ1Itt3NAQrxJSQ==",
-
-    // ["abandon", "again"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25lYWdhaW4=": "ogBYQFATTgdBelLjh+ejkZnK57tjIlU6O8WoySmPgfchcNgaGe8V55esZiCK2lkyHBUBI0U1KHZWwOGsWl84FkBkVNsBWE2lAQIDJiABIVggqgBL4MAr96dYpLAo1ZNCrKORLawsenQBUSmJR3LqagciWCDi67v0XtVnZZ83IkTVv/A8PXenu7qhm6vOPTqa7WZbww==",
-
-    // ["abandon", "asset"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25lYXNzZXQ=": "ogBYQB6vsZx4HUbDHsNw8GcVIWJBFVX/h16D66AKL1wCsNrEMYMbu4/3z0X0hysGm8vxbWCmIlM+OEkchST8/2Dc4qMBWE2lAQIDJiABIVgg/48MCAg2f+BhPVqTTInLAHXspZeh/BpR1MqmDsNInWAiWCDsb6w9o+BIR8mqWw5o7I+VW6LXwgI3xU7yGS52cqC2wg==",
-
-    // ["abandon", "blood"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25lYmxvb2Q=": "ogBYQAx31FKhFgOFYuYEqRl089EySjGp557NkTWON7ddr7AZDcv3n0ZsSNmWBk6EOLS6n8pN3V9Sy3LnKjpGjzMzMWsBWE2lAQIDJiABIVgge8OQsQ1Zb2iMgVZIFhtnGI1OfnmkY5btmFqVg3jZWdEiWCD84dayp3Sc2nG+Fxbj3ceD2KYDE79Xp9vnH7khiEpG5w==",
-
-    // ["abandon", "exact"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25lZXhhY3Q=": "ogBYQDLVli5+M8l/GDnpRq4zjiMrtSq3EwdL2Ceas7/ncnlxrPD/ubXx0sg7n5ofGRywndulyarqqzn5EtZaUuUf3SABWE2lAQIDJiABIVggT/6BjGR90GCse5R3vQssbU7aQokrGHM6xCFGnOZOnfUiWCAgP7WBDBPZu41OPux2r1/PoNP1A8jEUtinUFdONnkGdA==",
-
-    // ["abandon", "carbon"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25mY2FyYm9u": "ogBYQOZAXaKrSH4EJuvxlUw+qgXDjGAWN/CryVRAwH5S2V2uJC8f5axK+BYdVcwD2nu1jleg+dakn/ijNz1tSDc1j5EBWE2lAQIDJiABIVggqRWGb6yIq7I/XrUiyc2lsz8M9e/GcrQkLnhmaXViyYAiWCA8B+dWvP+sMZEMEuvYpSkMKc+dD+NSdGgYn5vFOcDdfw==",
-
-    // ["abandon", "coconut"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25nY29jb251dA==": "ogBYQGhgASD5rOH9YA9q16gSNhtKlLXEGo6JE2mKMZbyepIHIo2QpcnebeEYHizDoEh2jn8xfTH9kB1jufq78HCTR1UBWE2lAQIDJiABIVggeyNv+rGywWNw1Y+eBHvtbOywbvpChiD5w3AytEhOgaYiWCBpQFFD4BGVd3vb+fx1zDH+IOZwSOulJ1Itt3NAQrxJSQ==",
-
-    // ["abandon", "bracket"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25nYnJhY2tldA==": "ogBYQAx31FKhFgOFYuYEqRl089EySjGp557NkTWON7ddr7AZDcv3n0ZsSNmWBk6EOLS6n8pN3V9Sy3LnKjpGjzMzMWsBWE2lAQIDJiABIVgge8OQsQ1Zb2iMgVZIFhtnGI1OfnmkY5btmFqVg3jZWdEiWCD84dayp3Sc2nG+Fxbj3ceD2KYDE79Xp9vnH7khiEpG5w==",
-
-    // ["abandon", "garbage"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25nZ2FyYmFnZQ==": "ogBYQKLb6fK+O9vIQaW4Lxt3Xvm7sR2+/3PamG6pqIxB++ng9YymaDC0GMaIiJWfVdxlT1gYt27MvTbl21rqXEQxfAEBWE2lAQIDJiABIVggIhHawreD2KFfjF7LB7aZ7uGYE5GG/s/teCUKWXtiJNEiWCACNkhJKjW1NoXEHsKJ64MOyZLnHhR7KZIMTge5e93r0Q==",
-
-    // ["abandon", "maximum"]
-    "L2lkc3RvcmUvMDCCZ2FiYW5kb25nbWF4aW11bQ==": "ogBYQHMLrM/lvY5+IxhVaIwm+gKnHZ48WprlUG2IoHFaJ+H43DqZfF6i2z30HwTP5yS81axSE8Nnf70f1ekeOi2Hu5QBWE2lAQIDJiABIVggMAzClW04PIXTHdvVSbGZ0tZSxgH6zu+S9Qj4WvYptGgiWCDr7d1xvCu/DK7NhPXklkM2IJ8Soq4GU/4nvcq9/sFfwQ==",
-
-    // maekgs7inh5yxvyfkvh4zz644fwpjx5eizlz27sz2tq6jsdizi
-    "L2lkc3RvcmUvMDEBFGl9DT9xeuCqqfmc+5wtnpv0iMrzr8s6nDyZDQ==": "ogBYQM1cbJ9w9U4+oiogs57HSSoArrHI24JwLmrfCEs2iauczQ3asi9GuMkNKLKBx62809S+uDwReSW8wmLVc6ZBVx8BWE2lAQIDJiABIVgg/GItWU9YVlIIHeNyTSieRjP3evxAQcJsNF+tBsmYnQ0iWCBW1tTAiyRHBxlEUL8lr24Pf3w6PpGfwPPGiI1T6YGOVg==",
-
-    // maepvplhemzkkso63kfqkvkam42xzkeixgtsaye5lqnvdohibl
-    "L2lkc3RvcmUvMDEBH1es5GZUqTvbUWCqqAzmr5URFzTkDBOrg2o3HQ==": "ogBYQOZAXaKrSH4EJuvxlUw+qgXDjGAWN/CryVRAwH5S2V2uJC8f5axK+BYdVcwD2nu1jleg+dakn/ijNz1tSDc1j5EBWE2lAQIDJiABIVggqRWGb6yIq7I/XrUiyc2lsz8M9e/GcrQkLnhmaXViyYAiWCA8B+dWvP+sMZEMEuvYpSkMKc+dD+NSdGgYn5vFOcDdfw==",
-
-    // mae3hwd6rwkyciliirmdtdjckizej5syomgty3bqdvze4qhq3c
-    "L2lkc3RvcmUvMDEBNnsP0bKwJC0IiwcxpEpGSJ7LDmGnjYYDrknIHg==": "ogBYQGhgASD5rOH9YA9q16gSNhtKlLXEGo6JE2mKMZbyepIHIo2QpcnebeEYHizDoEh2jn8xfTH9kB1jufq78HCTR1UBWE2lAQIDJiABIVggeyNv+rGywWNw1Y+eBHvtbOywbvpChiD5w3AytEhOgaYiWCBpQFFD4BGVd3vb+fx1zDH+IOZwSOulJ1Itt3NAQrxJSQ==",
-
-    // mafbhtwqip5oyk6ftugjzh2xnpytco72zsst5ycsfspcgoay33
-    "L2lkc3RvcmUvMDEBQnnaCH9dhXizoZOT6u1+Jid/WZSn3ApFk8RnAw==": "ogBYQAx31FKhFgOFYuYEqRl089EySjGp557NkTWON7ddr7AZDcv3n0ZsSNmWBk6EOLS6n8pN3V9Sy3LnKjpGjzMzMWsBWE2lAQIDJiABIVgge8OQsQ1Zb2iMgVZIFhtnGI1OfnmkY5btmFqVg3jZWdEiWCD84dayp3Sc2nG+Fxbj3ceD2KYDE79Xp9vnH7khiEpG5w==",
-
-    // mafpcwmktmvrmitxs7tc5e27vhh2zlpr5jd22axpxel4hipi7z
-    "L2lkc3RvcmUvMDEBXisxU2VixE7y/MXSa/U59ZW+PUj1oF33Ivh0PQ==": "ogBYQKLb6fK+O9vIQaW4Lxt3Xvm7sR2+/3PamG6pqIxB++ng9YymaDC0GMaIiJWfVdxlT1gYt27MvTbl21rqXEQxfAEBWE2lAQIDJiABIVggIhHawreD2KFfjF7LB7aZ7uGYE5GG/s/teCUKWXtiJNEiWCACNkhJKjW1NoXEHsKJ64MOyZLnHhR7KZIMTge5e93r0Q==",
-    "L2lkc3RvcmUvMDEBcLDj4RFKXAbfp+OTRu6VVPSsN5M26dqAxqbM7g==": "ogBYQHMLrM/lvY5+IxhVaIwm+gKnHZ48WprlUG2IoHFaJ+H43DqZfF6i2z30HwTP5yS81axSE8Nnf70f1ekeOi2Hu5QBWE2lAQIDJiABIVggMAzClW04PIXTHdvVSbGZ0tZSxgH6zu+S9Qj4WvYptGgiWCDr7d1xvCu/DK7NhPXklkM2IJ8Soq4GU/4nvcq9/sFfwQ==",
-    "L2lkc3RvcmUvMDEBgXw9kxcbo0ToZ512D16xT1A045EqoUAQuo5NAQ==": "ogBYQCf03a1fDKcj6xsVttQi3iBHtsEVUvXi7rno+ptz2Og8IXG9ORP0yd3bpB7fpYXzUaKJoOlVFvWO8v/3iFUSGMMBWE2lAQIDJiABIVgge3RD64xEa06DUGf/bSNUomXe1WegqaLW7zjMbSqgc1siWCDLTkLhHlJvQzuZIGjOERo1YG49X/7IBtfargBQV0PO5A==",
-    "L2lkc3RvcmUvMDEBh4RbY58ChE71pM7Jmj4gXQXpgBvwXVHPJO1aNg==": "ogBYQDLVli5+M8l/GDnpRq4zjiMrtSq3EwdL2Ceas7/ncnlxrPD/ubXx0sg7n5ofGRywndulyarqqzn5EtZaUuUf3SABWE2lAQIDJiABIVggT/6BjGR90GCse5R3vQssbU7aQokrGHM6xCFGnOZOnfUiWCAgP7WBDBPZu41OPux2r1/PoNP1A8jEUtinUFdONnkGdA==",
-    "L2lkc3RvcmUvMDEBjGDe9M0/fa0kbDW3t3onXOsyki4GFukl9SJOcg==": "ogBYQM9WDJLw1m05/Q3yn9dAiHn1phBhV3wRuLpks0KXl95PnRfBVEh6vUfU/LCaVbjjtWLNpvKhMDrgXQ7ywX1owksBWE2lAQIDJiABIVggd1rnlVNp8/wAcPFomIQ+LC83xzY6ytG4wG50opQPOZEiWCDHq9i50G+8d+GO8+fyfdK7FUbCtJxBuPaF/ACdSe3idw==",
-    "L2lkc3RvcmUvMDEBwFOiSkEpmlp+vJbFUaneufnadwvjIOnFmegpGg==": "ogBYQB6vsZx4HUbDHsNw8GcVIWJBFVX/h16D66AKL1wCsNrEMYMbu4/3z0X0hysGm8vxbWCmIlM+OEkchST8/2Dc4qMBWE2lAQIDJiABIVgg/48MCAg2f+BhPVqTTInLAHXspZeh/BpR1MqmDsNInWAiWCDsb6w9o+BIR8mqWw5o7I+VW6LXwgI3xU7yGS52cqC2wg==",
-    "L2lkc3RvcmUvMDEBy7juGH+2ToxrH4fsO2CFiDl1KNarfk9XDQcOjA==": "ogBYQFATTgdBelLjh+ejkZnK57tjIlU6O8WoySmPgfchcNgaGe8V55esZiCK2lkyHBUBI0U1KHZWwOGsWl84FkBkVNsBWE2lAQIDJiABIVggqgBL4MAr96dYpLAo1ZNCrKORLawsenQBUSmJR3LqagciWCDi67v0XtVnZZ83IkTVv/A8PXenu7qhm6vOPTqa7WZbww=="
   },
 
-  "hash": "ec146d026104e49d93259586f53cdf2ae76fb76bde9edfb97df47b80c1577e5b",
+  "hash": "1e7cafc27df5604da5021a7d17ba2d1c94473da949b86c5db6da789844d5a424",
 }
