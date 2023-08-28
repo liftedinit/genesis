@@ -1,0 +1,172 @@
+{
+  "genesis_time": "2023-08-29T00:00:00.00Z",
+  "chain_id": "manifest-kvstore-alpha",
+  "initial_height": "0",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "500"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app_version": "0"
+    }
+  },
+  "validators": [
+    {
+      "address": "499BC03B204B753CD5E66BC823EEC97AC472E3AE",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "sNbiS4yzFD2OhCIbDDHOw+dPAu67cOnxSQe9a4ZWKnM="
+      },
+      "name": "p-kvs-000.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "5F7549063251A3A1BB791955B07C11D7C1D915C1",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "5RcE+VsWWZGeOfJn79ef4LPsmsUIdH8lRzf8l7t/fes="
+      },
+      "name": "p-kvs-001.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "4BBA7E7834E3D81B71620572F4BC0BF5789E404D",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "xREW7TH4csZVr9D2Q1xVcSDpURdUEMtFrdAA9xtoDeQ="
+      },
+      "name": "p-kvs-002.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "CA9CC65DAD29A6DF3BFB1EDA9D59EE0BD26228BB",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "RtRbI5bKR4JJdrVaHdMDFhbyddAT8q4r1AkUzIFfG6c="
+      },
+      "name": "p-kvs-003.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "6CE45ABC50BB77A59A866D79D6EB04C0F4E9E6E9",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "2m9eWloJ2fPHhGFknkUsIE8aNipNcKCfyuLYcUZuKfE="
+      },
+      "name": "p-kvs-004.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "FB9354D9C91E41DFD968C3AA910AD668BFFDEC05",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "KwAuzHVzs8luGKg4UbYKfNv/nvTRhpiQ1IcOBoavUzc="
+      },
+      "name": "p-kvs-005.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "C955196C9A333F0B5F926F981A3B367901723CF1",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "ilT7YXN39CwbwCe49mtmnwHNLiSpsh1GvsMCeAF1b7k="
+      },
+      "name": "p-kvs-006.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "0378F55AC5BF4D9DE10BAF1FD244F71E1413FFF8",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "Ayc9wW1OW3a2x41FsdbbeJyF7r4xfdfilot12VKmvvI="
+      },
+      "name": "p-kvs-007.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "23F22842BC3FA88117210E2E1A36D4AE0BF7B67E",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "7fkdcsHXn+9g9ZAPQhGGPEdjd6999VHCBb98uL+4704="
+      },
+      "name": "p-kvs-008.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "033C13CFA567FC343E83AE493B3D2A17C8F8482E",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "LA1JGxEmN/LuXJreoO9PjSqwVU8REbRAP83CS+NY5bA="
+      },
+      "name": "p-kvs-009.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "D7DBFA9F5F55F5617A1213BCF78FAABCA07C66CE",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "SQT0fdaVNARwEs8LCHApeYrVeobcc3FhfipjpsR03ZM="
+      },
+      "name": "p-kvs-010.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "ED18951A88983F37D818FD241E6E76AECEBA4A30",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "2j4eVLt1alQYzJ7adAb9Ad9NlgtCYj6/l1D0rnXIHX8="
+      },
+      "name": "p-kvs-011.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "06AA07B6B315A8CB71724408C183C198502CA7DF",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "x5UgDNXgjq2yG8Zv1dn6G2Ex/Iyerm2C2MFCA4VW71w="
+      },
+      "name": "p-kvs-012.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "2E9F13462D96C239687E17920C9F78011914C9FA",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "orulgnrm2k6KdHGgV7uGkZLhtTQK9XW1VudEMAJ2F2M="
+      },
+      "name": "p-kvs-013.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "44B67AFABD9EC46FFD9178D566FF646330093EB4",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "moaRDlUh5Wu1C5N/4MkaOvshg9N6NsgmflSzHQL27as="
+      },
+      "name": "p-kvs-014.alpha.manifest0.net",
+      "power": "10"
+    },
+    {
+      "address": "3CDD68AB333F2867C0568DA3B1E0DC314652277B",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "m66uaOf7qrh/DZKPzrgh1JdFG+5YvKuHArw5Df4QD34="
+      },
+      "name": "p-kvs-015.alpha.manifest0.net",
+      "power": "10"
+    }
+  ],
+  "app_hash": ""
+}
